@@ -1,0 +1,6 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "powermode.enabled": true,
+    "powermode.presets": "fireworks",
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
