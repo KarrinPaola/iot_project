@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
       print(isFirstLogin);
 
       // Navigate based on login state
-      if (isFirstLogin == false) {
+      if (isFirstLogin == true) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const MainControlPage()),

@@ -190,6 +190,11 @@ class _HomeState extends State<Home> {
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: false,
+        actions: [
+          IconButton(onPressed: (){
+            _checkBoardConnect();
+          }, icon: Icon(Icons.refresh))
+        ],
       ),
       body: Stack(
         children: [

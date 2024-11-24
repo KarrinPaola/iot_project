@@ -142,6 +142,8 @@ class _BluetoothSetupPageState extends State<BluetoothSetupPage> {
       await connection!.output.allSent;
       print("Đã gửi userID: $userIdData");
 
+      // Xác nhận đã truyền đầy đủ dữ liệu isFirstLogin = true
+      setFirstLoginStatus();
       // Chuyển đến trang chính
       _navigateToMainControlPage();
     } catch (e) {
@@ -244,7 +246,6 @@ class _BluetoothSetupPageState extends State<BluetoothSetupPage> {
                     const SizedBox(height: 20),
                     MyButton(
                       onTap: () {
-                        setFirstLoginStatus();
                         sendWifiData();
                       },
                       title: "Xác nhận",
